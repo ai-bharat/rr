@@ -1,0 +1,1053 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday, Raksha! ✨</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            overflow-x: hidden;
+            background: linear-gradient(135deg, #ffeef8 0%, #f8e8ff 50%, #ffe8f0 100%);
+            color: #4b3d4f;
+            scroll-behavior: smooth;
+        }
+
+        .section {
+            min-height: 100vh;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(255, 182, 193, 0.3), rgba(255, 192, 203, 0.3)), 
+                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><defs><pattern id="runway" patternUnits="userSpaceOnUse" width="100" height="100"><rect width="100" height="100" fill="%23fdf2f8"/><path d="M0 50h100M50 0v100" stroke="%23f9a8d4" stroke-width="0.5" opacity="0.3"/></pattern></defs><rect width="1200" height="800" fill="url(%23runway)"/></svg>');
+            background-size: cover;
+            text-align: center;
+            color: #8b5a83;
+            text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+        }
+
+        .hero-content h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            animation: fadeInUp 2s ease-out;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .hero-content .subtitle {
+            font-family: 'Dancing Script', cursive;
+            font-size: 2.5rem;
+            color: #d97ba6;
+            animation: fadeInUp 2s ease-out 0.5s both;
+            margin-bottom: 2rem;
+        }
+
+        .cta-button {
+            background: linear-gradient(45deg, #f472b6, #ec4899);
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            animation: fadeInUp 2s ease-out 1s both;
+            box-shadow: 0 10px 30px rgba(236, 72, 153, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 15px 40px rgba(236, 72, 153, 0.4);
+        }
+
+        /* Manifestation Section */
+        .manifestation-section {
+            background: linear-gradient(135deg, #fff0f5, #fef7ff);
+            text-align: center;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .manifestation-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+
+        .manifestation-text {
+            font-family: 'Dancing Script', cursive;
+            font-size: 3rem;
+            color: #8b5a83;
+            padding: 1rem;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: .15em solid #8b5a83;
+            animation: typing 4s steps(40, end), blink-caret .75s step-end infinite;
+            position: absolute;
+        }
+
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+
+        @keyframes blink-caret {
+            from, to { border-color: transparent; }
+            50% { border-color: #8b5a83; }
+        }
+
+        .star-confetti-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            overflow: hidden;
+            z-index: 10;
+        }
+
+        .star {
+            position: absolute;
+            font-size: 2rem;
+            color: #ffcc00;
+            animation: starFall 3s linear forwards;
+            opacity: 0;
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            color: #8b5a83;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        
+        /* Dreamboard */
+        .dreamboard {
+            background: #fdf4ff;
+        }
+
+        .dreamboard-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+        }
+
+        .dream-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            text-align: center;
+        }
+
+        .dream-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .dream-card h3 {
+            font-family: 'Playfair Display', serif;
+            color: #8b5a83;
+            margin-bottom: 1rem;
+        }
+        
+        .dream-card p {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1rem;
+        }
+
+        /* Personal Letter */
+        .letter {
+            background: #fff8f0;
+            text-align: left;
+        }
+
+        .letter-content {
+            max-width: 800px;
+            background: white;
+            padding: 3rem;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            font-family: 'Dancing Script', cursive;
+            font-size: 1.3rem;
+            line-height: 2;
+            color: #6b4c57;
+        }
+        .letter-content h2 {
+             font-family: 'Playfair Display', serif; 
+             color: #8b5a83; 
+             margin-bottom: 1rem;
+        }
+        .letter-content p {
+            font-size: 1.3rem;
+            line-height: 2;
+        }
+        .letter-content strong {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        /* Raksha's Studio */
+        .studio {
+            background: #f0f9ff;
+            text-align: center;
+        }
+
+        .studio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+        }
+
+        .studio-item {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            position: relative;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+        }
+        
+        .studio-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+
+        .studio-item h3 {
+            font-family: 'Playfair Display', serif;
+            color: #8b5a83;
+            margin-bottom: 0.5rem;
+        }
+        
+        .studio-item p {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .coming-soon {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: #f472b6;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+        }
+        
+        .upload-design {
+            margin-top: 2rem;
+            text-align: center;
+        }
+
+        .upload-design a {
+            background-color: #ec4899;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+        }
+        
+        .upload-design a:hover {
+            background-color: #d83a8b;
+        }
+        
+        /* Top Designers Section */
+        .top-designers {
+            background-color: #fff0f5;
+        }
+        
+        .designers-container {
+            display: flex;
+            overflow-x: scroll;
+            gap: 2rem;
+            padding: 1rem 0;
+            max-width: 1200px;
+            width: 100%;
+        }
+
+        .designer-card {
+            flex-shrink: 0;
+            width: 300px;
+            background: #ffffff;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .designer-card h3 {
+            font-family: 'Playfair Display', serif;
+            color: #8b5a83;
+            margin-bottom: 0.5rem;
+        }
+
+        .designer-card p {
+            font-family: 'Dancing Script', cursive;
+            font-size: 1.2rem;
+            line-height: 1.5;
+        }
+
+        /* Timeline */
+        .timeline {
+            background: #fff5f5;
+        }
+
+        .timeline-container {
+            max-width: 800px;
+            position: relative;
+        }
+
+        .timeline-container::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: #f472b6;
+            transform: translateX(-50%);
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 2rem;
+            padding: 1rem;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            width: calc(50% - 1rem);
+        }
+
+        .timeline-item:nth-child(odd) {
+            left: 0;
+        }
+
+        .timeline-item:nth-child(even) {
+            left: 50%;
+            transform: translateX(1rem);
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #f472b6;
+            border: 4px solid white;
+            top: 20px;
+        }
+
+        .timeline-item:nth-child(odd)::before {
+            right: -30px;
+        }
+        
+        .timeline-item:nth-child(even)::before {
+            left: -30px;
+        }
+        
+        .timeline-item h3 {
+            font-family: 'Playfair Display', serif;
+            color: #8b5a83;
+            margin-bottom: 0.5rem;
+        }
+        
+        /* Birthday Surprise */
+        .surprise {
+            background: #fef3c7;
+            text-align: center;
+        }
+
+        .surprise-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            max-width: 1000px;
+        }
+
+        .surprise-box {
+            background: white;
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .surprise-box:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+        }
+        
+        .surprise-box h3 {
+            font-family: 'Playfair Display', serif;
+            color: #8b5a83;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .surprise-content {
+            display: none;
+            transition: opacity 0.5s ease;
+        }
+
+        .surprise-box.revealed .surprise-content {
+            display: block;
+            opacity: 1;
+        }
+        
+        /* Message Board */
+        .message-board {
+            background: #fef7ff;
+            text-align: center;
+        }
+        
+        .messages-display {
+            max-width: 800px;
+            width: 100%;
+            margin-top: 2rem;
+            max-height: 400px;
+            overflow-y: auto;
+            padding-right: 1rem;
+            text-align: left;
+        }
+        
+        .message-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-bottom: 1.5rem;
+        }
+        
+        .message-card strong {
+            font-family: 'Playfair Display', serif;
+            color: #8b5a83;
+        }
+        
+        .message-card p {
+            margin-top: 0.5rem;
+            font-family: 'Dancing Script', cursive;
+            font-size: 1.2rem;
+            line-height: 1.5;
+        }
+
+        /* Future Self Message */
+        .future-self-message {
+            background: #fff8f0;
+            text-align: left;
+        }
+        
+        .future-note {
+            max-width: 800px;
+            background: white;
+            padding: 3rem;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            font-family: 'Dancing Script', cursive;
+            font-size: 1.3rem;
+            line-height: 2;
+            color: #6b4c57;
+        }
+
+        /* Footer */
+        .footer {
+            background: linear-gradient(135deg, #1a1a2e, #16213e);
+            color: #ffffff;
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+
+        .footer-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(45deg, #f472b6, #a855f7, #fbbf24);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .footer-subtitle {
+            font-family: 'Dancing Script', cursive;
+            font-size: 1.5rem;
+            color: #d1d5db;
+            margin-bottom: 2rem;
+        }
+        
+        .footer-message {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #e5e7eb;
+            margin-bottom: 2rem;
+        }
+        
+        .footer-signature {
+            font-family: 'Dancing Script', cursive;
+            font-size: 1.3rem;
+            color: #f472b6;
+            margin-top: 2rem;
+        }
+        
+        /* Music Player */
+        .music-player {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(5px);
+            border-radius: 50px;
+            padding: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        #music-button {
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: #ec4899;
+            cursor: pointer;
+            padding: 5px;
+            margin-right: 10px;
+        }
+
+        #music-button:focus {
+            outline: none;
+        }
+
+        #volume-slider {
+            width: 80px;
+            cursor: pointer;
+            -webkit-appearance: none;
+            height: 5px;
+            background: #ec4899;
+            border-radius: 5px;
+        }
+
+        #volume-slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            width: 15px;
+            height: 15px;
+            background: #fff;
+            border: 2px solid #ec4899;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes slideIn {
+            0% { opacity: 0; transform: translateY(20px); }
+            5% { opacity: 1; transform: translateY(0); }
+            95% { opacity: 1; transform: translateY(0); }
+            100% { opacity: 0; transform: translateY(-20px); }
+        }
+
+        @keyframes confetti {
+            0% { transform: translateY(-100vh) rotate(0deg); opacity: 1; }
+            100% { transform: translateY(100vh) rotate(720deg); opacity: 0; }
+        }
+        
+        .confetti {
+            position: fixed;
+            width: 10px;
+            height: 10px;
+            background: #f472b6;
+            animation: confetti 3s linear infinite;
+            z-index: 1000;
+            pointer-events: none;
+        }
+
+        @keyframes starFall {
+            0% { 
+                transform: translateY(0vh) rotate(0deg);
+                opacity: 0;
+            }
+            10% { opacity: 1; }
+            90% { opacity: 1; }
+            100% { 
+                transform: translateY(100vh) rotate(360deg);
+                opacity: 0;
+            }
+        }
+        
+        .message-from-icon {
+            font-size: 1.1rem;
+            line-height: 1.4;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+            
+            .section {
+                padding: 1rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .letter-content {
+                padding: 2rem;
+                font-size: 1rem;
+            }
+
+            .timeline-item {
+                width: 100%;
+                left: 0;
+                transform: none;
+            }
+            .timeline-item:nth-child(even)::before {
+                left: 10px;
+            }
+            .timeline-container::before {
+                left: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <section class="section hero" id="hero">
+        <div class="hero-content">
+            <h1>Raksha Rathi</h1>
+            <div class="subtitle">Future Fashion Icon</div>
+            <button class="cta-button" onclick="scrollToNext()">Begin Your Journey ✨</button>
+        </div>
+    </section>
+
+    <section class="section manifestation-section" id="manifestation">
+        <div class="manifestation-container">
+            <h2 class="manifestation-text"></h2>
+        </div>
+        <div class="star-confetti-container" id="star-confetti"></div>
+    </section>
+
+    <section class="section dreamboard" id="dreamboard">
+        <h2 class="section-title">Your Dreamboard</h2>
+        <div class="dreamboard-grid">
+            <div class="dream-card">
+                <h3>🎨 Creative Vision</h3>
+                <p>"Fashion is the armor to survive the reality of everyday life." - Bill Cunningham</p>
+            </div>
+            <div class="dream-card">
+                <h3>✨ Inspiration</h3>
+                <p>"The only way to do great work is to love what you do." - Steve Jobs</p>
+            </div>
+            <div class="dream-card">
+                <h3>🌟 Future Self</h3>
+                <p>Imagine yourself at Paris Fashion Week, watching models showcase YOUR designs.</p>
+            </div>
+            <div class="dream-card">
+                <h3>💖 Confidence</h3>
+                <p>"Creativity is intelligence having fun." - Albert Einstein</p>
+            </div>
+            <div class="dream-card">
+                <h3>💡 Innovation</h3>
+                <p>"To be a good designer, you must constantly observe and question everything." - Manish Malhotra</p>
+            </div>
+            <div class="dream-card">
+                <h3>🚀 Ambition</h3>
+                <p>"The future belongs to those who believe in the beauty of their dreams." - Eleanor Roosevelt</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section letter" id="letter">
+        <div class="letter-content">
+            <h2>Dear Raksha,</h2>
+            <p>You’ve always had that rare mix -  the elegance of someone who belongs in Mumbai during fashion week, the wanderlust of a backpacker in Manali, and the quiet fire of someone who’s going to build something the world remembers.</p>
+            <br>
+            <p>You’re not just meant to live - You’re meant to experience. To walk unfamiliar streets with a camera in your hand and curiosity in your eyes. To fall in love with a city over dinner. To dance barefoot somewhere on 22nd street. To miss a train and make a memory. 🍷🗺️💃</p><br>
+            <p>This website - call it a soft whisper to the universe. A signal that something is stirring. That Raksha Rathi isn’t just going to live life - she’s going to style it, curate it, laugh through it, and leave her mark across continents, closets, and conversations. 🌍🖤</p><br>
+            <p>Here’s to a year of beautiful risks, slow mornings, wild ideas, and silly laughter at 2 AM. Here’s to the delays that lead to detours, and the moments that become milestones. And through it all, remember - You don’t have to become someone else to be great. Just be more you. The world hasn’t even seen half of what that looks like.</p><br>
+            <p><b>Happy Birthday, Raksha.</b></p>
+            <p>You’re rare. You’re radiant. You’re just getting started.</p>
+
+            <p style="text-align: right; margin-top: 2rem;">With infinite belief,<br><strong>Bharat B.</strong></p>
+        </div>
+    </section>
+    
+    <section class="section studio" id="studio">
+        <h2 class="section-title">Raksha's Studio</h2>
+        <p>A portfolio for a future icon. Coming soon!</p>
+        <div class="studio-grid">
+            <div class="studio-item">
+                <div class="coming-soon">Coming Soon</div>
+                <h3>First Collection</h3>
+                <p>Your debut fashion line, ready to launch.</p>
+            </div>
+            <div class="studio-item">
+                <div class="coming-soon">Coming Soon</div>
+                <h3>Mood Boards</h3>
+                <p>Inspiration for your next collection, beautifully curated.</p>
+            </div>
+            <div class="studio-item">
+                <div class="coming-soon">Coming Soon</div>
+                <h3>Portfolio</h3>
+                <p>A professional showcase of your best work.</p>
+            </div>
+            <div class="studio-item">
+                <div class="coming-soon">Coming Soon</div>
+                <h3>Client Projects</h3>
+                <p>Designs for real-world collaborations and commissions.</p>
+            </div>
+            <div class="studio-item">
+                <div class="coming-soon">Coming Soon</div>
+                <h3>Sketches & Concepts</h3>
+                <p>The birthplace of your ideas, from pencil to paper.</p>
+            </div>
+            <div class="studio-item">
+                <div class="coming-soon">Coming Soon</div>
+                <h3>Materials & Textures</h3>
+                <p>Experimentation with fabrics and unique textiles.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section top-designers" id="top-designers">
+        <h2 class="section-title">From India's Top Designers</h2>
+        <div class="designers-container">
+            <div class="designer-card">
+                <h3>Sabyasachi Mukherjee</h3>
+                <p>"Your eye for detail and passion for tradition will make you a star."</p>
+            </div>
+            <div class="designer-card">
+                <h3>Manish Malhotra</h3>
+                <p>"Keep pushing boundaries. Your creativity is your biggest asset."</p>
+            </div>
+            <div class="designer-card">
+                <h3>Anamika Khanna</h3>
+                <p>"The future of Indian fashion is in hands like yours. Happy Birthday!"</p>
+            </div>
+            <div class="designer-card">
+                <h3>Masaba Gupta</h3>
+                <p>"Be fearless, be bold, be you. Can't wait to see your journey."</p>
+            </div>
+            <div class="designer-card">
+                <h3>Tarun Tahiliani</h3>
+                <p>"Your unique perspective will bring something fresh to the industry."</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section timeline" id="timeline">
+        <h2 class="section-title">Your Journey to Lakme Fashion Week</h2>
+        <div class="timeline-container">
+            <div class="timeline-item">
+                <h3>First Sketch (Today)</h3>
+                <p>The journey begins with a single idea.</p>
+            </div>
+            <div class="timeline-item">
+                <h3>Building Your Portfolio</h3>
+                <p>Showcasing your unique vision and style.</p>
+            </div>
+            <div class="timeline-item">
+                <h3>First Collection</h3>
+                <p>Bringing your designs to life for the world to see.</p>
+            </div>
+            <div class="timeline-item">
+                <h3>Lakme Fashion Week</h3>
+                <p>The runway awaits. You are a global icon!</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section surprise" id="surprise">
+        <h2 class="section-title">🎁 Birthday Readings - Tap to Reveal!</h2>
+        <div class="surprise-grid">
+            <div class="surprise-box" onclick="revealSurprise(this)">
+                <h3>✨ Confidence Booster</h3>
+                <div class="surprise-content">
+                    <p>Your creativity shines brighter than any star. Every design you create is a masterpiece waiting to inspire the world. Believe in your incredible talent!</p>
+                </div>
+            </div>
+            <div class="surprise-box" onclick="revealSurprise(this)">
+                <h3>🌟 Dream Chaser</h3>
+                <div class="surprise-content">
+                    <p>Every fashion icon started with a dream and a sketch. Your journey to Paris Fashion Week begins today. Keep sketching, keep dreaming, keep believing!</p>
+                </div>
+            </div>
+            <div class="surprise-box" onclick="revealSurprise(this)">
+                <h3>💖 Self-Love Reminder</h3>
+                <div class="surprise-content">
+                    <p>Your unique vision is exactly what the fashion world needs. Trust your instincts, embrace your style, and remember - you don't need to be perfect, you just need to be YOU!</p>
+                </div>
+            </div>
+            <div class="surprise-box" onclick="revealSurprise(this)">
+                <h3>🎨 Creative Spirit</h3>
+                <div class="surprise-content">
+                    <p>Every line you draw, every color you choose, every design you create - it all matters. You have the power to make people feel beautiful and confident through fashion!</p>
+                </div>
+            </div>
+            <div class="surprise-box" onclick="revealSurprise(this)">
+                <h3>🚀 Future Icon</h3>
+                <div class="surprise-content">
+                    <p>Stop waiting for permission to be brilliant. Start today, create fearlessly, and watch as your talent opens doors you never imagined possible. The fashion world is waiting for YOU!</p>
+                </div>
+            </div>
+            <div class="surprise-box" onclick="revealSurprise(this)">
+                <h3>💫 Birthday Magic</h3>
+                <div class="surprise-content">
+                    <p>Happy Birthday, beautiful soul! This year will be magical - filled with creative breakthroughs, confidence, and amazing opportunities. Shine bright, fashion star! ✨</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section future-self-message" id="future-self">
+        <div class="future-note">
+            <h2 style="font-family: 'Playfair Display', serif; color: #8b5a83; margin-bottom: 1rem;">A Message from Future You (2029)</h2>
+            <p>Hey birthday girl! 🎉</p>
+            <p>It's me - you from 2029, writing this from my atelier in Delhi just before Lakme Fashion Week show. I wanted to reach back in time to tell you something important...</p>
+            <p>Every sketch you make today, every doubt you overcome, every dream you dare to chase - it all leads to this moment. The journey hasn't always been easy, but your passion and determination made it incredible.</p>
+            <p>That birthday website Bharat made for you? You'll look back at it many times over the years, remembering the moment you truly believed you could make it. And guess what? You did.</p>
+            <p>Keep sketching, keep dreaming, and most importantly - keep believing in the amazing designer you're destined to become.</p>
+            <p>Trust the process. Trust yourself. The fashion world is waiting for you.</p>
+            <p style="text-align: right; margin-top: 2rem;">With love from your future,<br><strong>Fashion Icon Raksha Rathi ✨</strong></p>
+        </div>
+    </section>
+    
+    <section class="section message-board" id="message-board">
+        <h2 class="section-title">Birthday Wishes & Encouragement</h2>
+        <div class="messages-display" id="messages-display">
+            <div class="message-card">
+                <strong>Giorgio Armani</strong>
+                <p class="message-from-icon">"To Raksha, a true visionary. Your work is a beacon of creativity. Happy Birthday!"</p>
+            </div>
+            <div class="message-card">
+                <strong>Donatella Versace</strong>
+                <p class="message-from-icon">"Remember, confidence is the best accessory. Shine on, my dear."</p>
+            </div>
+            <div class="message-card">
+                <strong>Marc Jacobs</strong>
+                <p class="message-from-icon">"Dare to be different. It’s the only way to be unforgettable. Happy Birthday, Raksha!"</p>
+            </div>
+            <div class="message-card">
+                <strong>Stella McCartney</strong>
+                <p class="message-from-icon">"Fashion is about more than clothes. It's about a message. Your designs will have a powerful one."</p>
+            </div>
+            <div class="message-card">
+                <strong>Ralph Lauren</strong>
+                <p class="message-from-icon">"Believe in your own American Dream, but make it your Indian dream. All the best for your journey."</p>
+            </div>
+            <div class="message-card">
+                <strong>Valentino Garavani</strong>
+                <p class="message-from-icon">"Elegance is the only beauty that never fades. You have it in your heart and your hands."</p>
+            </div>
+            <div class="message-card">
+                <strong>Karl Lagerfeld (posthumously)</strong>
+                <p class="message-from-icon">"Design is a way of life. Live it beautifully and boldly."</p>
+            </div>
+            <div class="message-card">
+                <strong>Tom Ford</strong>
+                <p class="message-from-icon">"To Raksha, an artist with a purpose. May your work be as exquisite as your spirit."</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-title">
+                <span class="sparkle-animation">✨</span> 
+                Happy Birthday, Raksha! 
+                <span class="sparkle-animation">✨</span>
+            </div>
+            <div class="footer-subtitle">Future Fashion Icon & Creative Visionary</div>
+            <div class="footer-message">
+                This website is a celebration of your dreams, your talent, and your incredible potential. 
+                Every time you visit this page, remember that you have everything it takes to become the fashion icon you're destined to be.
+                <br><br>
+                Your journey starts now. The fashion world is waiting for your unique voice.
+            </div>
+            <div class="footer-signature">
+                Made with 💫 for the ♾️ possibilities
+                <br>- Bharat B.
+            </div>
+        </div>
+    </footer>
+    
+    <div class="music-player">
+        <audio id="background-music" loop autoplay>
+            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <button id="music-button"><i class="fas fa-pause"></i></button>
+        <input type="range" id="volume-slider" min="0" max="1" step="0.01" value="0.5">
+    </div>
+
+    <script>
+        // Manifestation Carousel
+        const manifestationText = document.querySelector('.manifestation-text');
+        const starConfettiContainer = document.getElementById('star-confetti');
+        const messages = [
+            "I am a creative force destined for greatness",
+            "My designs will inspire the world",
+            "Every sketch brings me closer to my dreams",
+            "I am confident, talented, and unstoppable",
+            "Fashion is my language, and I speak it fluently"
+        ];
+        let currentMessageIndex = 0;
+
+        function typeMessage(message, index) {
+            manifestationText.textContent = '';
+            let charIndex = 0;
+            const typingInterval = setInterval(() => {
+                if (charIndex < message.length) {
+                    manifestationText.textContent += message.charAt(charIndex);
+                    charIndex++;
+                } else {
+                    clearInterval(typingInterval);
+                    createStarConfetti();
+                    setTimeout(() => {
+                        currentMessageIndex = (currentMessageIndex + 1) % messages.length;
+                        typeMessage(messages[currentMessageIndex], currentMessageIndex);
+                    }, 3000); 
+                }
+            }, 100); 
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            typeMessage(messages[currentMessageIndex], currentMessageIndex);
+        });
+
+        // Smooth scrolling
+        function scrollToNext() {
+            document.getElementById('manifestation').scrollIntoView({ 
+                behavior: 'smooth' 
+            });
+        }
+
+        // Surprise reveal
+        function revealSurprise(element) {
+            if (!element.classList.contains('revealed')) {
+                element.classList.add('revealed');
+                element.querySelector('.surprise-content').style.display = 'block';
+                createGeneralConfetti();
+            }
+        }
+
+        // General Confetti effect
+        function createGeneralConfetti() {
+            const colors = ['#f472b6', '#ec4899', '#fbbf24', '#a78bfa'];
+            for (let i = 0; i < 20; i++) {
+                const confetti = document.createElement('div');
+                confetti.className = 'confetti';
+                confetti.style.left = Math.random() * 100 + 'vw';
+                confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                confetti.style.animationDelay = Math.random() * 2 + 's';
+                document.body.appendChild(confetti);
+                
+                setTimeout(() => confetti.remove(), 3000);
+            }
+        }
+
+        // Star Confetti effect
+        function createStarConfetti() {
+            for (let i = 0; i < 15; i++) {
+                const star = document.createElement('span');
+                star.className = 'star';
+                star.innerHTML = '✨';
+                star.style.left = `${Math.random() * 100}vw`;
+                star.style.top = `${Math.random() * 20}vh`;
+                star.style.animationDelay = `${Math.random()}s`;
+                starConfettiContainer.appendChild(star);
+                
+                setTimeout(() => star.remove(), 3000);
+            }
+        }
+
+        // Birthday confetti on load
+        window.addEventListener('load', () => {
+            setTimeout(createGeneralConfetti, 1000);
+        });
+
+        // Message board
+        function addMessage() {
+            const name = document.getElementById('sender-name').value;
+            const message = document.getElementById('message-text').value;
+            
+            if (name && message) {
+                const messageCard = document.createElement('div');
+                messageCard.className = 'message-card';
+                messageCard.innerHTML = `<strong>${name}</strong><p>"${message}"</p>`;
+                
+                document.getElementById('messages-display').prepend(messageCard);
+                
+                document.getElementById('sender-name').value = '';
+                document.getElementById('message-text').value = '';
+                
+                createGeneralConfetti();
+            }
+        }
+
+        // Music Toggle
+        const backgroundMusic = document.getElementById('background-music');
+        const musicButton = document.getElementById('music-button');
+        const volumeSlider = document.getElementById('volume-slider');
+        let isPlaying = true;
+
+        // Set initial volume
+        backgroundMusic.volume = volumeSlider.value;
+
+        musicButton.addEventListener('click', () => {
+            if (isPlaying) {
+                backgroundMusic.pause();
+                musicButton.innerHTML = '<i class="fas fa-music"></i>';
+            } else {
+                backgroundMusic.play();
+                musicButton.innerHTML = '<i class="fas fa-pause"></i>';
+            }
+            isPlaying = !isPlaying;
+        });
+
+        volumeSlider.addEventListener('input', () => {
+            backgroundMusic.volume = volumeSlider.value;
+        });
+    </script>
+</body>
+</html>
