@@ -636,16 +636,93 @@
                 font-size: 1rem;
             }
 
-            .timeline-item {
-                width: 100%;
-                left: 0;
-                transform: none;
-            }
-            .timeline-item:nth-child(even)::before {
-                left: 10px;
-            }
             .timeline-container::before {
                 left: 20px;
+            }
+
+            .timeline-item {
+                width: calc(100% - 30px);
+                left: 30px;
+                transform: none;
+                margin-left: 0;
+                margin-right: 0;
+            }
+
+            .timeline-item:nth-child(even) {
+                left: 30px;
+            }
+
+            .timeline-item::before {
+                left: -20px;
+            }
+            
+            .timeline-item:nth-child(odd)::before,
+            .timeline-item:nth-child(even)::before {
+                left: -20px;
+            }
+
+            .dreamboard-grid, .studio-grid, .surprise-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .designers-container {
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+            }
+            
+            .designer-card {
+                width: 250px;
+            }
+            
+            .music-player {
+                bottom: 10px;
+                right: 10px;
+            }
+            
+            #volume-slider {
+                width: 60px;
+            }
+            
+            .footer-title {
+                font-size: 1.8rem;
+            }
+
+            .footer-subtitle {
+                font-size: 1.2rem;
+            }
+            
+            .footer-message {
+                font-size: 1rem;
+            }
+            
+            .footer-signature {
+                font-size: 1.1rem;
+            }
+            
+            /* Mobile-specific adjustments for manifestation section */
+            .manifestation-text {
+                font-size: 2rem; /* Reduced font size for smaller screens */
+                white-space: normal; /* Allow text to wrap */
+                animation: none; /* Disable the animation on mobile to prevent overflow issues */
+                border-right: none; /* Remove the blinking cursor on mobile */
+            }
+
+            /* Adjust positioning for typing effect on mobile */
+            .manifestation-container {
+                padding: 1rem;
+                text-align: center;
+                white-space: normal;
+                word-wrap: break-word;
+            }
+            
+            /* Reduce confetti size on mobile */
+            .confetti {
+                width: 7px;
+                height: 7px;
+            }
+            
+            .star {
+                font-size: 1.5rem;
             }
         }
     </style>
